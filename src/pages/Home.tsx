@@ -3,23 +3,23 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Brain, Leaf, Zap, ArrowRight, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import heroPortrait from "@/assets/hero-portrait.jpg";
+import heroPortrait from "@/assets/tahan_img_one.jpeg";
 
 const beliefs = [
   {
     icon: Brain,
-    title: "What motivates me",
-    content: "I believe technology should serve humanity and our planet. Every algorithm I write, every system I build, is driven by the question: how can this make the world more sustainable? The intersection of artificial intelligence and sustainability represents one of our greatest opportunities to address climate change and ocean degradation. I'm motivated by the potential to create tools that help researchers, policymakers, and communities make data-driven decisions for a healthier planet."
+    title: "Why I care",
+    content: "Growing up in India, I saw first-hand the impact of human ignorance & the effects of climate change. My family and I moved to Hawaii in 2021, since then I have been able to enjoy the luxuries of living in paradise, isolated from the rest of the world, many times living in our own world of peace, clean air, and the pacific ocean to ourselves. But I never forgot about what I experienced in India. Climate change can seem so unfair at times, some people don’t feel the effect of it, but others do. The reality is, we are killing our planet, the places we call home, and our future generations. I wish everyone would just see what I saw, to get the experiences & opportunities I was fortunate to get, so they could see the world we live in. Only then will people truly realize that climate change isn’t like any other issue. No single piece of legislation, no single service project, no individual entity can help solely remediate all of its impact. It has to be top of mind–the only thing on mind–for EVERYONE, if we ever want to see a better future. For our families, our communities, and our planet."
   },
   {
     icon: Zap,
-    title: "How I approach building projects", 
-    content: "My development process always starts with understanding the real-world problem and the people it affects. I believe in rapid prototyping, continuous testing, and iterative improvement. Whether I'm training a machine learning model or building a web application, I focus on creating solutions that are both technically sound and genuinely useful. I prioritize clean, maintainable code and comprehensive documentation because the best projects are those that others can build upon."
+    title: "How I approach my work", 
+    content: "I will not do anything just to do it. My goal with my life is to contribute in the most positive way. So far, I am building up my experiences. Thanks to my awesome mentors, I have been able to see so much, talk to so many, and understand even more. I hope someday I can look back and know that I offset the impact on the planet from my own life–and hopefully that of many others. I haven’t yet centered on a single “thing” like a lot of my classmates have. I have ranging interests from awareness & justice to legislation & policy and computer science & AI/ML. The thing is, I don’t feel any kind of pressure to center around one “thing”. Why can’t I do everything? People keep telling me that I do too much, or I need to find something that will help me with my future. The truth is, I don’t see a future for myself where I am stuck working on something I don’t feel 100% passionate about. Having multiple avenues to attack the same issue I care about gives me constant motivation and energy to keep going. I hope I can continue this lifestyle with whatever future awaits me."
   },
   {
     icon: Leaf,
-    title: "Why sustainability matters to my CS/AI work",
-    content: "Computer science without purpose is just clever code. I'm passionate about using AI to accelerate environmental research, from analyzing satellite imagery to optimize renewable energy systems to processing sound waves for wave energy testing. Every project I undertake considers its environmental impact and potential to contribute to sustainability goals. I believe the next generation of technologists has a responsibility to ensure our digital solutions help heal, rather than harm, our planet."
+    title: "What I want people to know",
+    content: "To my fellow classmates: Don’t let people tell you what you can & cannot do, or what you should or should not do. Don’t stress about what you aren’t doing, it isn’t too late to do anything, you just need to start now. Don’t do things you aren't genuinely passionate about, there’s just no point. We are told to “take the hardest classes” and to get “good grades”--even I fall for this–but the truth is, the thing that will best equip you for the future is finding your passion. Instead of plotting out your entire future while at the ripe age of 16, find what you care about. What gets you going, what impact do you want to have on the world. This will take time–a lot of time–but it will eventually happen, after a few days, after a few weeks, or even after a few years, and decades later it might change, but it doesn’t hurt to start now. Experiment and try anything & everything, don’t let people judge you or downplay you, and don’t feel like you have to do anything."
   }
 ];
 
@@ -57,7 +57,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                CS/AI × <span className="text-secondary">Ocean</span> Sustainability
+                Tahan <span className="text-secondary">Bapna's</span> Portfolio
               </motion.h1>
               <motion.p 
                 className="text-xl text-muted-foreground leading-relaxed max-w-lg"
