@@ -9,7 +9,7 @@ const beliefs = [
   {
     icon: Brain,
     title: "What motivates me",
-    content: "I believe technology should serve humanity and our planet. Every algorithm I write, every system I build, is driven by the question: how can this make the world more sustainable? The intersection of artificial intelligence and environmental science represents one of our greatest opportunities to address climate change and ocean degradation. I'm motivated by the potential to create tools that help researchers, policymakers, and communities make data-driven decisions for a healthier planet."
+    content: "I believe technology should serve humanity and our planet. Every algorithm I write, every system I build, is driven by the question: how can this make the world more sustainable? The intersection of artificial intelligence and sustainability represents one of our greatest opportunities to address climate change and ocean degradation. I'm motivated by the potential to create tools that help researchers, policymakers, and communities make data-driven decisions for a healthier planet."
   },
   {
     icon: Zap,
@@ -19,7 +19,7 @@ const beliefs = [
   {
     icon: Leaf,
     title: "Why sustainability matters to my CS/AI work",
-    content: "Computer science without purpose is just clever code. I'm passionate about using AI to accelerate environmental research, from analyzing satellite imagery to optimize renewable energy systems to building IoT networks that monitor ecosystem health. Every project I undertake considers its environmental impact and potential to contribute to sustainability goals. I believe the next generation of technologists has a responsibility to ensure our digital solutions help heal, rather than harm, our planet."
+    content: "Computer science without purpose is just clever code. I'm passionate about using AI to accelerate environmental research, from analyzing satellite imagery to optimize renewable energy systems to processing sound waves for wave energy testing. Every project I undertake considers its environmental impact and potential to contribute to sustainability goals. I believe the next generation of technologists has a responsibility to ensure our digital solutions help heal, rather than harm, our planet."
   }
 ];
 
