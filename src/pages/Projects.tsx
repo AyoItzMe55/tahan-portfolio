@@ -55,7 +55,7 @@ export default function Projects() {
           <SectionHeader 
             eyebrow="Portfolio"
             title="Experiences & Projects"
-            description="Exploring the intersection of computer science, AI, and ocean sustainability through hands-on projects and research initiatives."
+            description="Exploring the intersection of computer science, AI, and sustainability through hands-on projects and research initiatives."
             className="mb-12"
           />
         </motion.div>

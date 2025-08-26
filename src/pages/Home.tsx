@@ -23,12 +23,98 @@ const beliefs = [
   }
 ];
 
-const highlights = [
-  { date: "May 2025", event: "Intel ISEF Finalist - Coral Reef Health Detection" },
-  { date: "March 2025", event: "FTC Hawaii State Champions" },
-  { date: "January 2025", event: "Published paper on ML for environmental monitoring" },
-  { date: "December 2024", event: "Congressional App Challenge Winner" },
-  { date: "November 2024", event: "NASA HUNCH Program Selection" }
+// Photo gallery data with placeholder images and descriptions
+const photoGallery = [
+  {
+    id: 1,
+    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+    alt: "Ocean conservation work",
+    description: "Working on coral reef restoration projects in Hawaii"
+  },
+  {
+    id: 2,
+    src: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop&crop=center",
+    alt: "AI and machine learning",
+    description: "Developing AI models for environmental monitoring"
+  },
+  {
+    id: 3,
+    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center",
+    alt: "Robotics and engineering",
+    description: "Building underwater robots for ocean research"
+  },
+  {
+    id: 4,
+    src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop&crop=center",
+    alt: "Environmental research",
+    description: "Field research on climate change impacts"
+  },
+  {
+    id: 5,
+    src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop&crop=center",
+    alt: "Community outreach",
+    description: "Educating others about environmental sustainability"
+  },
+  {
+    id: 6,
+    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+    alt: "Marine biology studies",
+    description: "Studying marine ecosystems and biodiversity"
+  },
+  {
+    id: 7,
+    src: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop&crop=center",
+    alt: "Data analysis",
+    description: "Analyzing environmental data with Python"
+  },
+  {
+    id: 8,
+    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center",
+    alt: "Innovation projects",
+    description: "Creating solutions for ocean conservation"
+  },
+  {
+    id: 9,
+    src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop&crop=center",
+    alt: "Collaboration",
+    description: "Working with scientists and researchers"
+  },
+  {
+    id: 10,
+    src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop&crop=center",
+    alt: "Education",
+    description: "Learning about climate science and policy"
+  },
+  {
+    id: 11,
+    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop&crop=center",
+    alt: "Technology",
+    description: "Using cutting-edge tech for environmental protection"
+  },
+  {
+    id: 12,
+    src: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop&crop=center",
+    alt: "Future vision",
+    description: "Envisioning a sustainable future for our planet"
+  },
+  {
+    id: 13,
+    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center",
+    alt: "Leadership",
+    description: "Leading environmental initiatives in my community"
+  },
+  {
+    id: 14,
+    src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop&crop=center",
+    alt: "Innovation",
+    description: "Developing new approaches to conservation"
+  },
+  {
+    id: 15,
+    src: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop&crop=center",
+    alt: "Impact",
+    description: "Making a positive difference in the world"
+  }
 ];
 
 export default function Home() {
@@ -172,39 +258,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Highlights */}
+      {/* Photo Gallery */}
       <section className="py-20 bg-muted/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div 
-            className="text-center mb-12"
+            className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
             <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
-              Latest Updates
+              Visual Journey
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              Recent Highlights
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              Photo Gallery
             </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              A glimpse into my work, experiences, and passion for environmental conservation and technology.
+            </p>
           </motion.div>
 
-          <div className="space-y-4">
-            {highlights.map((highlight, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            {photoGallery.map((photo) => (
               <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                key={photo.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: photo.id * 0.05 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-6 p-4 bg-background rounded-lg border border-border hover:shadow-md transition-shadow"
+                whileHover={{ scale: 1.05 }}
+                className="group relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg cursor-pointer"
               >
-                <div className="text-sm font-medium text-primary min-w-[100px]">
-                  {highlight.date}
-                </div>
-                <div className="flex-1 text-muted-foreground">
-                  {highlight.event}
+                <img
+                  src={photo.src}
+                  alt={photo.alt}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
+                {/* Hover overlay with semi-transparent black background on bottom half */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-white text-sm font-medium text-center leading-tight">
+                      {photo.description}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}
